@@ -3,7 +3,7 @@
 //
 //    <%= vite_client_tag %>
 //    <%= vite_javascript_tag 'application' %>
-console.log('Vite ⚡️ Rails')
+console.log('Vite ⚡️ Rails 42')
 
 // If using a TypeScript entrypoint file:
 //     <%= vite_typescript_tag 'application' %>
