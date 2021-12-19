@@ -1,4 +1,11 @@
 
+$text-transform-example: uppercase;
+
 button {
-  text-transform: uppercase;
+  text-transform: $text-transform-example;
+}
+
+// let's see if purgeCSS works
+.unused-selector {
+  font-size: 2rem;
 }

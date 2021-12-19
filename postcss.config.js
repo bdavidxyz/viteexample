@@ -2,14 +2,18 @@
 
 let purgecss = () => {}
 
-if (process.env.NODE_ENV !== 'development') {
+if (process.env.NODE_ENV === 'development') {
    purgecss = require('@fullhuman/postcss-purgecss')
 }
 
 module.exports = {
   plugins: [
     purgecss({
-      content: ['./**/*.html']
+      content: [
+        './app/**/*.html.erb',
+        './app/helpers/**/*.rb',
+        './app/frontend/**/*.js'
+      ]
     })
   ]
 }
